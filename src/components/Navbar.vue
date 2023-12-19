@@ -36,10 +36,10 @@ export default {
         setup(){
             let open = ref(false)
             let Links = [
-                {name: "Início", link: "#"},
-                {name: "Sobre", link: "#"},
-                {name: "Trabalhos", link: "Contact"},
-                {name: "Testemunhos", link: "#"},
+                {name: "Início", link: "#Home"},
+                {name: "Sobre", link: "#About"},
+                {name: "Trabalhos", link: "#Contact"},
+                {name: "Testemunhos", link: "#Testemunials"},
             ]
 
             function MenuOpen(){

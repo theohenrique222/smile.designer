@@ -57,7 +57,7 @@
     <a
       class="text-neutral-800 dark:text-neutral-400"
       href="https://tw-elements.com/"
-      >Theodoro Henrique | Fron-end Developer</a
+      >Theodoro Henrique | Front-end Developer</a
     >
   </div>
 </footer>

@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-5 pb-5 bg-second-bordo">
+  <div id="About" class="pt-5 pb-5 bg-second-bordo">
     <div class="lg:max-w-6xl max-w-sm m-auto">
       <div class="block rounded-lg bg-rose-50 ">
         <div class="flex flex-wrap items-center">
