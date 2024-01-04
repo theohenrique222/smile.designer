@@ -12,12 +12,11 @@
               <h2 class="mb-4 lg:text-3xl text-2xl font-extrabold">Conheça um pouco sobre de quem somos! </h2>
               <p class="mb-6 flex items-center font-bold uppercase text-danger dark:text-danger-500 lg:text-xl text-base">
                 <i class="bi bi-body-text px-2"></i>
-                Hudson Azevedo | Smile Designer
+                {{ title }}
               </p>
               <p class="mb-6 text-justify text-gray-900 dark:text-neutral-700 text-lg">
-                Técnico em Prótese dentária com especialização em áreas diversas, com amplo conhecimento e visão técnica detalhista que tange à função e à estética, a fim de garantir a melhor prestação de serviço para clínicas e consultórios odontológicos, com a finalidade de reestabelecer a capacidade mastigatoria e estética do paciente por meio de próteses dentárias.
+                {{ description }}
               </p>
-              
             </div>
           </div>
         </div>
@@ -28,7 +27,12 @@
 
 <script>
 export default {
-
+  data(){
+    return {
+      title: "Hudson Azevedo | Smile Designer",
+      description: "Técnico em Prótese dentária com especialização em áreas diversas, com amplo conhecimento e visão técnica detalhista que tange à função e à estética, a fim de garantir a melhor prestação de serviço para clínicas e consultórios odontológicos, com a finalidade de reestabelecer a capacidade mastigatoria e estética do paciente por meio de próteses dentárias.",
+    }
+  }
 }
 </script>
 

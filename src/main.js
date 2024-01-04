@@ -4,7 +4,10 @@ import App from './App.vue'
 
 createApp(App).mount('#app')
 
+var CampoContato
+
 import {
+    Sidenav,
     Modal,
     Ripple,
     Input,
@@ -12,6 +15,4 @@ import {
     Collapse,
   } from "tw-elements";
   
-  initTE({ Modal, Ripple, Collapse, Input });
-
-
+  initTE({ Modal, Ripple, Collapse, Input, Sidenav });

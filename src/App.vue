@@ -5,8 +5,9 @@ import About from './components/About.vue';
 import Portfolio from './components/Portfolio.vue';
 import Contact from './components/Contact.vue';
 import Footer from './components/Footer.vue';
-import Testemunials from './components/testemunials.vue';
+import Testemunials from './components/Testemunials.vue'; 
 import FAQ from './components/FAQ.vue'
+
 </script>
 
 <template>
