@@ -1,7 +1,7 @@
 <template>
   <div id="Contact">
     <section class="mb-32">
-      <div class="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-bg-form"></div>
+      <div id="Form" class="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat"></div>
       <div class=" px-6 md:px-12">
         <div
           class="block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-second-bordo/50 dark:shadow-black/20 md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
@@ -13,7 +13,7 @@
                     class="flex text-neutral-50 pb-1">Nome Completo:
                   </label>
                   <input 
-                    class="min-h-[auto] w-full rounded bg-transparent border border-white/40 text-white py-[0.32rem] px-3 leading-[1.6] outline-none"
+                    class="min-h-[auto] w-full rounded bg-transparent border placeholder:text-neutral-300 border-white/40 text-white py-[0.32rem] px-3 leading-[1.6] outline-none"
                     type="text" 
                     name="Nome" 
                     placeholder="Digite seu nome completo:"/>
@@ -146,5 +146,7 @@ export default {
 </script>
 
 <style>
-
+#Form {
+    background-image: url(../assets/bg-form.png);
+  }
 </style>
