@@ -1,27 +1,24 @@
 <template>
-
-    <div class="bg-black text-gray-100 py-1 px-8 shadow-2xl md:flex justify-between items-center">
-      <div class="flex items-center cursor-pointer">
-          <span class="mr-3">
-              <img src="../assets/logo3.png" alt="logo" height="15px" width="35px">
-          </span>
-  
-          <h1 class="text-xl">Designer</h1>
-          
-      </div>
-  
-      <span @click="MenuOpen()" class="absolute md:hidden right-6 top-5 cursor-pointer text-4xl">
-          <i :class="[open ? 'bi bi-x' : 'bi bi-filter-left']"></i>
-      </span>
-  
-      <ul class="md:flex md:items-center md:px-0 px-3 md:pb-0 pb-10 bg-black md:static absolute md:w-auto w-full top-14 duration-700 ease-in" :class="[open ? 'left-0' : 'left-[100%]']"> 
-          <li class="md:mx-4 md:my-0 my-4 " v-for="link in Links" :key="link">
-              <a :href="link.link" class="text-base hover:text-rose-500 ">{{ link.name }}</a>
-          </li>
-          <Button>
-              Fale Conosco
-          </Button>
-      </ul>
+    <div class="bg-black/90 border-b-2 z-50 border-gray-300 items-center fixed w-full text-gray-100 shadow-2xl">
+        <div class="flex justify-between lg:max-w-6xl max-w-sm m-auto">
+            <div class="flex items-center cursor-pointer">
+                <span class="mr-3">
+                    <img src="../assets/logo3.png" alt="logo" height="15px" width="35px">
+                </span>
+                <h1 class="text-xl">Designer</h1>
+            </div>
+            <span @click="MenuOpen()" class="absolute flex right-3 top-2 md:hidden cursor-pointer text-4xl">
+                <i :class="[open ? 'bi bi-x' : 'bi bi-filter-left']"></i>
+            </span>
+            <ul class="md:flex items-center md:px-0 md:pb-0 pb-10 lg:bg-transparent bg-black/90 gap-2 md:static absolute md:w-auto w-full top-14 duration-700 ease-in" :class="[open ? 'left-0' : 'left-[100%]']"> 
+                <li class="lg:my-0 my-3 m-auto text-center lg:border-0 border-b-2 border-gray-500" v-for="link in Links" :key="link">
+                    <a :href="link.link" class="text-base hover:border-b-4 border-rose-500 transition-all p-3">{{ link.name }}</a>
+                </li>
+                <Button class="text-center">
+                    Fale Conosco
+                </Button>
+            </ul>
+        </div>
     </div>
   </template>
 

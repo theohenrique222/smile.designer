@@ -1,5 +1,5 @@
 <template>
-  <section class="lg:bg-bg-lg bg-bg-sm w-full h-[600px] bg-no-repeat bg-center bg-cover">
+  <section id="Home" class="w-full h-[690px] bg-no-repeat bg-center bg-cover">
     <div class="lg:flex justify-between mx-auto max-w-5xl items-center pt-20 ">
      
       <div class="lg:hidden text-center">
@@ -43,3 +43,13 @@ export default {
   }
 }
 </script>
+<style>
+  #Home {
+    background-image: url(../assets/bg-lg.png);
+  }
+  @media (max-width: 640px) {
+    #Home {
+      background-image: url(../assets/bg-sm.png);
+    }
+  }
+</style>
